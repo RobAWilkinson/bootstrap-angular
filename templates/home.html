@@ -1,0 +1,25 @@
+<div class="row">
+  <div class="col-md-6">
+    <h2> Check out Rob's Fruit bazaar</h2>
+    Our only purpose is to provide the highest quality fruits to our customers
+    Consectetur itaque illo ex fugiat iusto quasi magni eligendi excepturi? Quae voluptates provident accusamus dolor cumque deserunt incidunt maxime. Alias possimus dolorum alias nisi libero inventore aliquid! Praesentium natus consequatur? Lorem rerum distinctio sed expedita mollitia. Voluptatem facilis fugit cum hic pariatur cum. Vero odit vel illo laborum tempora dicta nihil natus velit fugiat. Deleniti exercitationem hic unde id dicta. Consectetur quibusdam cupiditate quas dignissimos iste voluptas minus quisquam esse adipisci! Enim deleniti porro atque autem libero eaque hic laboriosam velit. Odit accusamus placeat delectus facere eum, nisi laboriosam veniam?  Consectetur harum dolorem officiis cum corrupti at molestiae cumque. Repudiandae architecto nostrum aliquam aliquid dolorum. Labore debitis iure aliquam deserunt ipsam commodi maiores! Quo consequatur inventore sequi inventore cum incidunt? Elit facilis facere omnis exercitationem repudiandae eveniet fuga, fuga, repudiandae. Voluptas officia praesentium excepturi quis quam ad? Ipsum quod distinctio voluptatibus doloremque possimus quisquam? Est assumenda sint quae porro eum! Consectetur repudiandae dolorem voluptatem dicta nesciunt? Repellendus odit aliquid veritatis architecto minus eligendi expedita voluptatem nesciunt ea autem vitae nobis! Ullam culpa earum asperiores ullam voluptatum expedita quibusdam autem cum.
+  
+  </div>
+  <div class="col-md-6">
+    <div class="row center">
+      <h2> Fruits In Stock</h2>
+    </div>
+    <div class="row fruits" ng-repeat="fruit in fruitCtrl.fruits">
+      <div class="col-md-4">{{fruit.name}}</div>
+      <div class="col-md-8">{{fruit.quantity}}</div>
+    </div>
+    <div class="row center">
+      <button class="btn btn-success" ng-click="fruitCtrl.open()">Add a new Fruit</button>
+
+    </div>
+    <div class="row">
+      <progressbar value="fruitCtrl.progress"></progressbar>
+      <button ng-click="fruitCtrl.clickme()">Click me</button>
+    </div>
+  </div>
+</div>

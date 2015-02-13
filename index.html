@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html ng-app="fruitApp">
+  <head>
+    <meta charset="utf-8">
+
+    <title>Your Page Title</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="lib/angular.js"></script>
+    <script src="lib/angular-ui-router.js"></script>
+    <script src="lib/ui-bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+  </head>
+
+  <body >
+    <div id="wrap">
+    <div class="container">
+      <nav class="navbar navbar-default navbar-static-top">
+        <div class="container">
+          <ul class="nav navbar-nav">
+            <li><a ui-sref="home">Home</a></li>
+            <li><a ui-sref="about">About</a></li>
+          </ul>
+        </div>
+      </nav>
+      <div class="row">
+        <h1 class="center">Home Sweet Home</h1>
+      </div>
+      <div class="row" class="center">
+        <div class="col-xs-1 col-xs-offset-2">
+          <div class="fruit"id="orange"></div>
+        </div>
+        <div class="col-xs-1 col-xs-offset-2">
+          <div class="fruit"id="lemon"></div>
+        </div>
+        <div class="col-xs-1 col-xs-offset-2">
+          <div id="pear"></div>
+        </div>
+      </div>
+      <div class="row">
+      </div>
+      <div id="ui-view" ui-view >
+      </div>
+    </div>
+  </div>
+  <div id="footer">
+    <div class="container">
+    Footer
+    </div>
+  </div>
+  </body>
+</html>
